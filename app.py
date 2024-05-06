@@ -5,7 +5,7 @@ import numpy as np
 from PIL import Image
 
 # Load the pre-trained model
-model = load_model('CNN_model.h5')
+model = load_model('my_pneumonia_detection_model.h5')
 img_width, img_height = 256, 256
 
 # from tensorflow.keras.preprocessing import image as keras_image
