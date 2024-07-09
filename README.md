@@ -7,17 +7,6 @@ This project uses a transfer learning approach to predict pneumonia from chest X
 - Early and accurate detection of pneumonia can significantly improve patient outcomes.
 - By leveraging advanced machine learning techniques, this project seeks to provide a reliable tool for healthcare professionals to diagnose pneumonia from chest X-rays efficiently.
 
-## 📊 Dataset 
-The dataset used in this project consists of chest X-ray images. The images are categorized into two classes:
-- Normal
-- Pneumonia
-
-The dataset should be organized into the following directory structure:
-
-![image](https://github.com/mayurd8862/Pneumonia-Detection-using-Transfer-Learning/assets/113239727/88677471-e9d1-4b5e-8429-6dedace897f1)
-
-## 🏗️ Model Architecture 
-The model uses the ResNet50V2 architecture, a powerful convolutional neural network pre-trained on the ImageNet dataset. Which contains over 14 million images and 1000 classes, making it highly effective for image classification tasks. The top layers of ResNet50V2 are replaced with custom layers to adapt it for the binary classification task of pneumonia detection.
 
 ## ⚙️ Installation 
 To run this project locally, follow these steps:
@@ -50,6 +39,26 @@ To run this project locally, follow these steps:
     ```bash
     Streamlit run app.py
     ```
+
+## 🌊 Project flow
+- Data ingestion
+- Data augmentattion
+- Model trainer
+- Model evaluation
+- Web app using streamlit
+- Predictions 
+
+## 📊 Dataset 
+The dataset used in this project consists of chest X-ray images. The images are categorized into two classes:
+- Normal
+- Pneumonia
+
+The dataset should be organized into the following directory structure:
+
+![image](https://github.com/mayurd8862/Pneumonia-Detection-using-Transfer-Learning/assets/113239727/88677471-e9d1-4b5e-8429-6dedace897f1)
+
+## 🏗️ Model Architecture 
+The model uses the ResNet50V2 architecture, a powerful convolutional neural network pre-trained on the ImageNet dataset. Which contains over 14 million images and 1000 classes, making it highly effective for image classification tasks. The top layers of ResNet50V2 are replaced with custom layers to adapt it for the binary classification task of pneumonia detection.
 
 ## 📈 Results 
 The model's performance is evaluated using accuracy, precision, recall, and F1-score. Detailed results and model evaluation metrics will be displayed upon training completion.
